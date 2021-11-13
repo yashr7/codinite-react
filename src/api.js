@@ -1,0 +1,33 @@
+//Base URL
+const apikey = "34cb2ec9f4c64c57bd574849a9bfdbe1";
+const base_url = `https://api.rawg.io/api/platforms?key=${apikey}&`;
+
+//Getting the date
+const getCurrentMonth = () => {
+  const month = new Date().getMonth() + 1;
+  if (month < 10) {
+    return `0${month}`;
+  } else return month;
+};
+
+const getCurrentDay = () => {
+  const day = new Date().getDate();
+  if (day < 10) {
+    return `0${day}`;
+  } else return day;
+};
+
+//Current day/month/year
+const currentYear = new Date().getFullYear();
+const currentMonth = getCurrentMonth();
+const currentDay = getCurrentDay();
+const currentDate = `${currentYear}-${currentMonth}-${currentDay}`;
+const lastYear = `${currentYear - 1}-${currentMonth}-${currentDay}`;
+const nextYear = `${currentYear + 1}-${currentMonth}-${currentDay}`;
+
+//Popular Games
+const popular_games = `games?dates=${lastYear},${currentDate}&ordering=-rating&page_size=10`;
+
+const popularGamesURL = () => `${base_url}${popular_games}`;
+
+console.log(popularGamesURL());
