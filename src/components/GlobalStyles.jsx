@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding:0;
         box-sizing: border-box;
+        color: #EFF6E0;
     }
     html{
         &::-webkit-scrollbar{
@@ -20,26 +21,28 @@ const GlobalStyles = createGlobalStyle`
     body{
         font-family: 'Montserrat', sans-serif;
         width: 100%;
+        background-color: #0b394b;
     }
     h2{
         font-size: 3rem;
-        font-family: 'Abril Fatface', cursive;
-        font-weight: lighter;
-        color: #333;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: #EFF6E0;
+       
     }
     h3{
-        font-size: 1.3rem;
-        color: #333;
-        padding: 1.5rem 0rem;
+        font-size: 1.2rem;
+        color: #AEC3B0;
+        padding: 1.2rem 0rem;
     }
     p{
         font-size: 1.2rem;
         line-height: 200%;
-        color: #696969;
+        color: #598392;
     }
     a{
         text-decoration: none;
-        color: #333;
+        color: #EFF6E0;
     }
     img{
         display: block;

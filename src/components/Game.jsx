@@ -40,8 +40,9 @@ const Game = ({ name, released, image, id }) => {
 };
 
 const StyledGame = styled(motion.div)`
+  background-color: #01161e;
   min-height: 30vh;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 10px #01161e;
   text-align: center;
   border-radius: 1rem;
   cursor: pointer;

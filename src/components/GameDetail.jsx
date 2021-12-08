@@ -139,10 +139,10 @@ const Detail = styled(motion.div)`
   width: 80%;
   border-radius: 1rem;
   padding: 2rem 5rem;
-  background: white;
+  background: #01161e;
   position: absolute;
   left: 10%;
-  color: black;
+  color: #eff6e0;
   z-index: 10;
   img {
     width: 100%;
