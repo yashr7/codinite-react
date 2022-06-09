@@ -151,11 +151,12 @@ const Detail = styled(motion.div)`
 
 const Stats = styled(motion.div)`
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   img {
-    width: 2rem;
-    height: 2rem;
+    width: 1.2rem;
+    height: 1.2rem;
     display: inline;
   }
 `;
@@ -164,14 +165,16 @@ const Info = styled(motion.div)`
 `;
 const Platforms = styled(motion.div)`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+
   img {
-    margin-left: 3rem;
+    margin-left: 1rem;
+    width: 2rem;
   }
 `;
 
 const Media = styled(motion.div)`
-  margin-top: 5rem;
+  margin-top: 3rem;
   img {
     width: 100%;
   }

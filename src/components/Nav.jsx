@@ -30,7 +30,12 @@ const Nav = () => {
         <h1>CODINITE</h1>
       </Logo>
       <form className="search">
-        <input value={textInput} onChange={inputHandler} type="text" />
+        <input
+          value={textInput}
+          onChange={inputHandler}
+          type="text"
+          placeholder="Search for Games"
+        />
         <button onClick={submitSearch} type="submit">
           Search
         </button>
@@ -49,22 +54,25 @@ const StyledNav = styled(motion.nav)`
     flex-direction: column;
   }
   input {
-    width: 30%;
-    font-size: 1.2rem;
-    padding: 0.5rem;
+    width: 70%;
+    font-size: 0.8rem;
+    padding: 0.8rem;
     border: none;
     margin-top: 1rem;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
-    color: #01161e;
+    color: #0d0428;
+    background-color: #aec3b0;
+    border-radius: 15px;
   }
   button {
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: none;
     margin-top: 1rem;
     padding: 0.5rem 2rem;
     cursor: pointer;
-    background: #aec3b0;
-    color: #01161e;
+    background-color: #0d0428;
+    color: #aec3b0;
+    border-radius: 10px;
   }
 `;
 

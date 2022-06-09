@@ -91,18 +91,19 @@ const Home = () => {
 };
 
 const GameList = styled(motion.div)`
-  padding: 0rem 5rem;
+  padding: 0rem 2rem;
   h2 {
-    padding: 5rem 0rem;
+    padding: 2rem 0rem 3rem 0rem;
+    text-align: center;
   }
 `;
 
 const Games = styled(motion.div)`
-  min-height: 80vh;
+  min-height: 70vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-column-gap: 3rem;
-  grid-row-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+  grid-column-gap: 5rem;
+  grid-row-gap: 4rem;
 `;
 
 export default Home;

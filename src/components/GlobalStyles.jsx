@@ -20,23 +20,23 @@ const GlobalStyles = createGlobalStyle`
     }
     body{
         font-family: 'Montserrat', sans-serif;
-        width: 100%;
-        background-color: #0b394b;
+        width: 100%;   
+        background: rgb(0,13,82);
+background: linear-gradient(90deg, rgba(0,13,82,1) 0%, rgba(252,70,108,1) 100%); 
     }
     h2{
-        font-size: 3rem;
+        font-size: 2rem;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         color: #EFF6E0;
-       
     }
     h3{
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         color: #AEC3B0;
-        padding: 1.2rem 0rem;
+        padding: 1rem 0.2rem;
     }
     p{
-        font-size: 1.2rem;
+        font-size: 0.7rem;
         line-height: 200%;
         color: #598392;
     }
